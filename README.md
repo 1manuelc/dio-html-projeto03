@@ -1,3 +1,5 @@
+# [Deploy atualizado](https://1manuelc.github.io/dio-html-projeto03/)
+
 # Módulo 3 - Trilha HTML
 
 **Título:** Recriando Wikipedia, com um layout melhor :)
