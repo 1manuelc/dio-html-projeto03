@@ -1,44 +1,522 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TypeScript - NewWiki</title>
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link
+			rel="shortcut icon"
+			href="assets/images/bookmark-icon-white.svg"
+			type="image/x-icon" />
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<img
+					src="assets/images/bookmark-icon-black.svg"
+					alt="NewWiki Logo" />
+				<h1>NewWiki</h1>
+			</div>
 
-    <div>   
-        <div class="logo">
-            <img src="assets/images/logo.png" width="200"/>
-        </div>
-    </div>
+			<div class="search">
+				<label for="header-search">Pesquisa:</label>
+				<input
+					type="search"
+					name="search"
+					id="header-search"
+					placeholder="Pesquise aqui qualquer assunto" />
 
-    <div class="bar"></div>
+				<a href="">
+					<img
+						src="assets/images/search-icon-black.svg"
+						alt="search button"
+						id="search-icon" />
+				</a>
+			</div>
+		</header>
 
-    <div class="content">
-        <div class="sidebar">
-            <h2>Título</h2>
-            <ul>
-                <li><a href="#">Links</a></li>
-            </ul>
-        </div>
+		<main>
+			<nav>
+				<h2>Conteúdo</h2>
+				<ul>
+					<li><a href="#start">Início</a></li>
+					<li><a href="#characteristics">Características</a></li>
+					<li><a href="#story">História</a></li>
+					<li><a href="#version-story">Histórico de Versões</a></li>
+				</ul>
+			</nav>
 
-        <div class="main">
-            
-        </div>
+			<section>
+				<h1>Typescript</h1>
 
-        <div class="anchors">
-            <h2>Neste Artigo</h2>
-            <ul>
-                <li><a href="#">Âncoras</a></li>
-            </ul>
-        </div>
-    </div>
+				<div id="start">
+					<p>
+						<strong>TypeScript</strong> é uma linguagem de
+						programação de código aberto desenvolvida pela
+						<strong>Microsoft</strong>. É um superconjunto sintático
+						estrito de JavaScript e adiciona tipagem estática
+						opcional à linguagem. Tipos fornecem uma maneira de
+						descrever a forma de um objeto, fornecendo melhor
+						documentação e permitindo que o TypeScript valide se seu
+						código está funcionando corretamente. Como TypeScript é
+						um superconjunto de JavaScript, os programas JavaScript
+						existentes também são programas TypeScript válidos.
+					</p>
 
-    <div class="footer">
+					<p>
+						Foi considerada pelo público a 4ª linguagem "mais
+						amada", de acordo com uma pesquisa conduzida pelo site
+						Stack Overflow em 2018, e está entre as 15 linguagens
+						mais populares, de acordo com uma pesquisa conduzida
+						pela RedMonk.
+					</p>
 
-    </div>
-</body>
+					<p>
+						Anders Hejlsberg, arquiteto da linguagem C# e criador
+						das linguagens Delphi e Turbo Pascal, trabalhou no
+						desenvolvimento do TypeScript. A linguagem pode ser
+						usada para desenvolver aplicações JavaScript no lado
+						cliente e lado servidor (Node.js ou Deno). Existem
+						várias opções disponíveis para transcompilação. O
+						TypeScript Checker padrão pode ser usado, ou o
+						compilador Babel pode ser chamado para converter
+						TypeScript em JavaScript.
+					</p>
+
+					<p>
+						TypeScript oferece suporte a arquivos de definição que
+						podem conter informações de tipo de bibliotecas
+						JavaScript existentes, assim como arquivos de cabeçalho
+						C ++ podem descrever a estrutura de arquivos de objeto
+						existentes. Isso permite que outros programas usem os
+						valores definidos nos arquivos como se fossem entidades
+						TypeScript estaticamente digitadas. Existem arquivos de
+						cabeçalho de terceiros para bibliotecas populares, como
+						jQuery, MongoDB e D3.js. Cabeçalhos TypeScript para os
+						módulos básicos do Node.js também estão disponíveis,
+						permitindo o desenvolvimento de programas Node.js dentro
+						do TypeScript.
+					</p>
+				</div>
+
+				<div id="characteristics">
+					<h2>Características</h2>
+					<div class="figure-char-container">
+						<figure>
+							<img
+								src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
+								alt="Typescript 2020 logo" />
+							<figcaption aria-disabled="true">
+								TypeScript 2020 logo
+							</figcaption>
+						</figure>
+
+						<div class="charact-text">
+							<p><b>Paradigma:</b> Multiparadigma</p>
+							<p><b>Surgido em:</b> 1 de outubro de 2012</p>
+							<p><b>Criado por:</b> Microsoft</p>
+							<p>
+								<b>Influenciada por:</b> C# - Java - JavaScript
+							</p>
+							<p><b>Extensão:</b> .ts - .tsx</p>
+						</div>
+					</div>
+				</div>
+
+				<div id="story">
+					<h2>História</h2>
+					<p>
+						O TypeScript foi divulgado pela primeira vez em outubro
+						de 2012 (na versão 0.8), após dois anos de
+						desenvolvimento interno na Microsoft.
+					</p>
+
+					<p>
+						Logo após o anúncio, Miguel de Icaza elogiou a linguagem
+						em si, mas criticou a falta de suporte maduro a IDE da
+						Microsoft, Visual Studio, que não estava disponível no
+						Linux e no OS X naquela época. Em abril de 2021 há
+						suporte em outras IDEs e editores de texto, incluindo
+						Emacs, Vim, Webstorm, Atom e o próprio Visual Studio
+						Code da Microsoft.
+					</p>
+
+					<p>
+						TypeScript 0.9, lançado em 2013, adicionou suporte para
+						tipos genéricos (generic types).
+					</p>
+
+					<p>
+						TypeScript 1.0 foi lançado na conferência de
+						desenvolvedores Build da Microsoft em 2014. O Update 2
+						do Visual Studio 2013 passa a fornecer suporte integrado
+						para TypeScript.
+					</p>
+
+					<p>
+						Em julho de 2014, a equipe de desenvolvimento anunciou
+						um novo compilador TypeScript, alegando ganhos de
+						desempenho de 5 vezes. Simultaneamente, o código-fonte,
+						que estava inicialmente hospedado no CodePlex, foi
+						movido para o GitHub.
+					</p>
+
+					<p>
+						Em 22 de setembro de 2016, o TypeScript 2.0 foi lançado;
+						ele introduziu vários recursos, incluindo a capacidade
+						de os programadores opcionalmente impedirem que
+						variáveis ​​recebam valores nulos, às vezes referido
+						como o erro de bilhões de dólares.
+					</p>
+
+					<p>
+						TypeScript 3.0 foi lançado em 30 de julho de 2018,
+						trazendo muitas adições à linguagem como expressões de
+						spread, parâmetros rest com tipos de tupla, parâmetros
+						rest genéricos e assim por diante.
+					</p>
+
+					<p>
+						TypeScript 4.0 foi lançado em 20 de agosto de 2020.
+						Embora esta versão não tenha introduzido nenhuma
+						alteração significativa, ele adicionou recursos de
+						linguagem, como Custom JSX Factories e Variadic Tuple
+						Types.
+					</p>
+				</div>
+
+				<div id="version-story">
+					<h2>Histórico de Versões</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Número da versão</th>
+								<th>Data de lançamento</th>
+								<th>Mudanças significativas</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>0.8</td>
+								<td>1 outubro 2012</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>0.9</td>
+								<td>18 junho 2013</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>1.0</td>
+								<td>12 abril 2014</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>1.1</td>
+								<td>6 outubro 2014</td>
+								<td>melhorias de desempenho</td>
+							</tr>
+							<tr>
+								<td>1.3</td>
+								<td>12 novembro 2014</td>
+								<td>modificador protected, tipos de tupla</td>
+							</tr>
+							<tr>
+								<td>1.4</td>
+								<td>20 janeiro 2015</td>
+								<td>
+									declarações de tipo de união, let e const,
+									strings de modelo, type guards, aliases de
+									tipo
+								</td>
+							</tr>
+							<tr>
+								<td>1.5</td>
+								<td>20 julho 2015</td>
+								<td>
+									Módulos ES6, namespace palavra-chave,
+									suporte para for..of, decorators
+								</td>
+							</tr>
+							<tr>
+								<td>1.6</td>
+								<td>16 setembro 2015</td>
+								<td>
+									Suporte JSX, intersection types, declarações
+									de tipo local, abstract classes e métodos,
+									funções de proteção de tipo definidas pelo
+									usuário
+								</td>
+							</tr>
+							<tr>
+								<td>1.7</td>
+								<td>30 novembro 2015</td>
+								<td>suporte async e await</td>
+							</tr>
+							<tr>
+								<td>1.8</td>
+								<td>22 fevereiro 2016</td>
+								<td>
+									restricções genéricas, erros de análise de
+									fluxo de controle, tipos literais de string,
+									allowJs
+								</td>
+							</tr>
+							<tr>
+								<td>2.0</td>
+								<td>22 setembro 2016</td>
+								<td>
+									tipos nulos e indefinidos, análise de tipo
+									baseada em fluxo de controle, tipos de união
+									discriminados, tipo never, palavra-chave
+									readonly, tipo de this para funções
+								</td>
+							</tr>
+							<tr>
+								<td>2.1</td>
+								<td>8 novembro 2016</td>
+								<td>
+									keyof e tipos de pesquisa, tipos mapeados,
+									object spread e rest
+								</td>
+							</tr>
+							<tr>
+								<td>2.2</td>
+								<td>22 fevereiro 2017</td>
+								<td>classes combinadas, object type</td>
+							</tr>
+							<tr>
+								<td>2.3</td>
+								<td>27 abril 2017</td>
+								<td>
+									iteração async, padrões de parâmetros
+									genéricos, opção strict
+								</td>
+							</tr>
+							<tr>
+								<td>2.4</td>
+								<td>27 junho 2017</td>
+								<td>
+									expressões de importação dinâmica, enums de
+									string, inferência aprimorada para
+									genéricos, contravariância estrita para
+									parâmetros de retorno de chamada
+								</td>
+							</tr>
+							<tr>
+								<td>2.5</td>
+								<td>31 agosto 2017</td>
+								<td>variáveis de cláusula catch opcionais</td>
+							</tr>
+							<tr>
+								<td>2.6</td>
+								<td>31 outubro 2017</td>
+								<td>tipos de função estritos</td>
+							</tr>
+							<tr>
+								<td>2.7</td>
+								<td>31 janeiro 2018</td>
+								<td>
+									propriedades com nome constante, tuplas de
+									comprimento fixo
+								</td>
+							</tr>
+							<tr>
+								<td>2.8</td>
+								<td>27 março 2018</td>
+								<td>
+									tipos condicionais, keyof aprimorada com
+									tipos de interseção
+								</td>
+							</tr>
+							<tr>
+								<td>2.9</td>
+								<td>14 maio 2018</td>
+								<td>
+									suporte para símbolos e literais numéricos
+									nos tipos de keyof e objetos mapeados
+								</td>
+							</tr>
+							<tr>
+								<td>3.0</td>
+								<td>30 julho 2018</td>
+								<td>
+									referências de projeto, extraindo e
+									espalhando (spreading) listas de parâmetros
+									com tuplas
+								</td>
+							</tr>
+							<tr>
+								<td>3.1</td>
+								<td>27 setembro 2018</td>
+								<td>tupla mapeável e tipos de array</td>
+							</tr>
+							<tr>
+								<td>3.2</td>
+								<td>30 novembro 2018</td>
+								<td>
+									verificação mais rigorosa de vinculação,
+									chamada e aplicação
+								</td>
+							</tr>
+							<tr>
+								<td>3.3</td>
+								<td>31 janeiro 2019</td>
+								<td>
+									regras relaxadas sobre métodos de tipos de
+									união, compilações incrementais para
+									projetos compostos
+								</td>
+							</tr>
+							<tr>
+								<td>3.4</td>
+								<td>29 março 2019</td>
+								<td>
+									compilações incrementais mais rápidas,
+									inferência de tipo de funções genéricas,
+									modificador readonly para matrizes,
+									asserções para constantes, verificação de
+									tipo global this
+								</td>
+							</tr>
+							<tr>
+								<td>3.5</td>
+								<td>29 maio 2019</td>
+								<td>
+									compilações incrementais mais rápidas, tipo
+									auxiliar Omit, verificações de propriedade
+									em excesso aprimoradas em tipos de união,
+									verificação de tipo de união mais
+									inteligente
+								</td>
+							</tr>
+							<tr>
+								<td>3.6</td>
+								<td>28 agosto 2019</td>
+								<td>
+									Geradores mais rígidos, distribuição de
+									array mais precisa, melhor suporte Unicode
+									para identificadores
+								</td>
+							</tr>
+							<tr>
+								<td>3.7</td>
+								<td>5 novembro 2019</td>
+								<td>
+									Encadeamento opcional, Nullish Coalescing
+								</td>
+							</tr>
+							<tr>
+								<td>3.8</td>
+								<td>20 fevereiro 2020</td>
+								<td>
+									Importações e exportações apenas de tipo,
+									campos privados ECMAScript, espera de nível
+									superior
+								</td>
+							</tr>
+							<tr>
+								<td>3.9</td>
+								<td>12 maio 2020</td>
+								<td>
+									Melhorias na inferência, melhorias na
+									velocidade
+								</td>
+							</tr>
+							<tr>
+								<td>4.0</td>
+								<td>20 agosto 2020</td>
+								<td>
+									Tipos de tupla variável, elementos de tupla
+									rotulados
+								</td>
+							</tr>
+							<tr>
+								<td>4.1</td>
+								<td>19 novembro 2020</td>
+								<td>
+									Tipos literais de modelo, remapeamento de
+									chave em tipos mapeados, tipos condicionais
+									recursivos
+								</td>
+							</tr>
+							<tr>
+								<td>4.2</td>
+								<td>25 fevereiro 2021</td>
+								<td>
+									Preservação de alias de tipo mais
+									inteligente, elementos rest
+									iniciais/intermediários em tipos de tupla,
+									verificações mais rígidas para o operador
+									in, abstract Construct Signatures
+								</td>
+							</tr>
+							<tr>
+								<td>4.3</td>
+								<td>26 maio 2021</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>4.4</td>
+								<td>26 outubro 2021</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>4.5</td>
+								<td>17 novembro 2021</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>4.6</td>
+								<td>28 fevereiro 2022</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>4.7</td>
+								<td>24 maio 2022</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>4.8</td>
+								<td>25 outubro 2022</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>4.9</td>
+								<td>15 novembro 2022</td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+
+			<aside>
+				<h2>Neste Artigo</h2>
+				<ul>
+					<li><a href="#">Microsoft</a></li>
+					<li><a href="#">JavaScript</a></li>
+					<li><a href="#">C++</a></li>
+					<li><a href="#">Anders Hejlsberg</a></li>
+                    <li><a href="#">Multiparadigma</a></li>
+				</ul>
+			</aside>
+		</main>
+
+		<footer>
+			<p>
+				Esta página foi editada pela última vez às 16:48 de 18 de agosto
+				de 2023
+			</p>
+
+			<div class="footer-links">
+				<a href="">Política de privacidade</a>
+				<a href="">Sobre a NewPedia</a>
+				<a href="">Avisos Gerais</a>
+				<a href="">Código de Conduta</a>
+			</div>
+		</footer>
+	</body>
 </html>
